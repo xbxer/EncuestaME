@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
 		 xmlns:s="library://ns.adobe.com/flex/spark" 
-		 xmlns:mx="library://ns.adobe.com/flex/mx" width="400" height="300">
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="400" height="300" contentBackgroundColor="#9A9292">
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<s:Button x="70" y="38" label="boton" id="btnprueba"/>
+	<s:Panel height="300" y="0" width="400" x="0">
+		<s:Button x="117" y="53" label="Button"/>
+	</s:Panel>
 </s:Group>
