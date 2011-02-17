@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="400" height="300">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:Panel x="0" y="-1" width="400" height="301" title="Captura de Alternativas">
+		<s:Label x="10" y="44" text="Pregunta"/>
+		<s:TextArea x="69" y="10" width="319"/>
+		<s:Button x="245" y="241" label="Aceptar"/>
+		<s:Button x="319" y="240" label="Cancelar"/>
+		<s:DropDownList x="69" y="169" width="319"></s:DropDownList>
+		<s:Label x="37" y="178" text="Tipo"/>
+	</s:Panel>
+</s:Group>
