@@ -5,4 +5,5 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
+	<s:Button x="70" y="38" label="boton" id="btnprueba"/>
 </s:Group>
