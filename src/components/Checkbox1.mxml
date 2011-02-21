@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009">
+	<fx:Metadata>[HostComponent("spark.components.CheckBox")]</fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+		<s:State name="upAndSelected"/>
+		<s:State name="overAndSelected"/>
+		<s:State name="downAndSelected"/>
+		<s:State name="disabledAndSelected"/>
+	</s:states>
+	<s:Rect radiusX="3" height="17" width="17" y="0.5" x="0.5" id="rect1">
+		<s:stroke>
+			<s:SolidColorStroke color="#ffffff" caps="none" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry ratio="0" color="#a1e1ef" alpha="1.0" color.over="#efcfa1" alpha.over="1.0" color.down="#ff5800" alpha.down="1.0" color.overAndSelected="#efcfa1" alpha.overAndSelected="1.0" color.downAndSelected="#ff5800" alpha.downAndSelected="1.0"/>
+				<s:GradientEntry ratio="1" color="#4fcce8" alpha="1.0" color.over="#ff9300" alpha.over="1.0" ratio.down="1" color.down="#ff9300" alpha.down="1.0" color.overAndSelected="#ff9300" alpha.overAndSelected="1.0" color.downAndSelected="#ff9300" alpha.downAndSelected="1.0"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:fill.disabled>
+			<s:SolidColor color="#cccccc"/>
+		</s:fill.disabled>
+		<s:fill.disabledAndSelected>
+			<s:SolidColor color="#cccccc"/>
+		</s:fill.disabledAndSelected>
+	</s:Rect>
+	<s:Rect y="1" x="1" radiusX="3" height="8" width="17">
+		<s:fill>
+			<s:SolidColor color="#ffffff" alpha="0.2"/>
+		</s:fill>
+	</s:Rect>
+	<s:RichText y="4" color="#000000"  fontSize="12" tabStops="S0 S50 S100" whiteSpaceCollapse="preserve" id="labelDisplay" text="(Label)" right.over="0" left.over="21" right.up="0" left.up="21" right.down="0" left.down="21" right.disabled="0" left.disabled="21" right.upAndSelected="0" left.upAndSelected="21" left.overAndSelected="21" right.overAndSelected="0" right.downAndSelected="0" left.downAndSelected="21" right.disabledAndSelected="0" left.disabledAndSelected="21">
+	</s:RichText>
+	<s:Rect y="5" x="5" radiusX="3" height="8" width="8" id="rect2" includeIn="disabledAndSelected,downAndSelected,overAndSelected,upAndSelected">
+		<s:fill>
+			<s:SolidColor color="#ffffff" alpha="1"/>
+		</s:fill>
+	</s:Rect>
+	<s:transitions>
+		<s:Transition fromState="upAndSelected" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{rect2}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+</s:Skin>

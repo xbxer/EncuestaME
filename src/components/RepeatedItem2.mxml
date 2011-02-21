@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt">
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="hovered"/>
+		<s:State name="selected"/>
+	</s:states>
+<!--	<s:Rect alpha.hovered="0.4" alpha.normal="0" alpha.selected="0.8" height="29" id="rect2" d:userLabel="Item Highlight" width="97">
+		<s:fill>
+			<s:SolidColor color="0xCED7EE"/>
+		</s:fill>
+	</s:Rect>-->
+	<s:Rect id="rect1" minWidth="100" minHeight="30" radiusX="5" top.normal="0" left.normal="0" right.normal="0" bottom.normal="0" left.hovered="0" right.hovered="0" top.hovered="0" bottom.hovered="0" left.selected="0" right.selected="0" bottom.selected="19.5" top.selected="0">
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#ffffff" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1.0" color="#a1e1ef" color.selected="#efcfa1" ratio="0"/>
+				<s:GradientEntry alpha="1.0" color="#4fcce8" color.selected="#ff9300" ratio="1" color.hovered="#a1e1ef" alpha.hovered="1.0"/>
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	<s:Rect radiusX="5" left.normal="0" right.normal="0" top.normal="0" height.normal="50%" left.hovered="0" right.hovered="0" top.hovered="0" height.hovered="50%" left.selected="1" right.selected="1" top.selected="0" height.selected="30%">
+		<s:fill>
+			<s:SolidColor alpha="0.2" color="#ffffff"/>
+		</s:fill>
+	</s:Rect>
+	<s:RichText color="#000000" fontFamily="Ubuntu Titling Bold" fontSize="12" id="labelDisplay" tabStops="S0 S50" text="{data}" horizontalCenter.selected="0" verticalCenter.selected="-10" horizontalCenter.hovered="0" verticalCenter.hovered="0" horizontalCenter.normal="0" verticalCenter.normal="0"/>
+	
+		<s:Path data="M 7.80 13.50 L 0.01 0.00 15.59 -0.01 Z " height="13.5" id="path1" width="15.6" bottom="6" horizontalCenter="0" includeIn="selected">
+			<s:stroke>
+				<s:SolidColorStroke caps="none" color="#ffffff" joints="miter" miterLimit="4" weight="1"/>
+			</s:stroke>
+			<s:fill>
+				<s:SolidColor color="#ff9300"/>
+			</s:fill>
+		</s:Path>
+		<s:Line id="line1" xTo="14" x="43.5" y="31.2" includeIn="selected">
+			<s:stroke>
+				<s:SolidColorStroke caps="none" color="#ff9300" joints="miter" miterLimit="4" weight="1"/>
+			</s:stroke>
+		</s:Line>
+
+	<!--<s:transitions>
+		<s:Transition fromState="selected" toState="normal" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{rect2}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+				<s:Parallel target="{group1}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>-->
+</s:ItemRenderer>

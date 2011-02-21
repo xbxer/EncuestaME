@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009">
+	<fx:Metadata>[HostComponent("spark.components.ToggleButton")]</fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+		<s:State name="upAndSelected"/>
+		<s:State name="overAndSelected"/>
+		<s:State name="downAndSelected"/>
+		<s:State name="disabledAndSelected"/>
+	</s:states>
+	<s:Rect radiusX="5" id="rect1" left.up="0" right.up="0" top.up="0" bottom.up="0" top.over="0" left.over="0" right.over="0" bottom.over="0" left.down="0" right.down="0" top.down="0" bottom.down="0" left.disabled="0" right.disabled="0" top.disabled="0" bottom.disabled="0" left.overAndSelected="0" right.overAndSelected="0" top.overAndSelected="0" bottom.overAndSelected="0" left.downAndSelected="0" right.downAndSelected="0" top.downAndSelected="0" bottom.downAndSelected="0" left.disabledAndSelected="0" right.disabledAndSelected="0" top.disabledAndSelected="0" bottom.disabledAndSelected="0" left.upAndSelected="0" right.upAndSelected="0" top.upAndSelected="0" bottom.upAndSelected="0">
+		<s:stroke>
+			<s:SolidColorStroke color="#ffffff" caps="none" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry ratio="0" color="#a1e1ef" alpha="1.0" ratio.over="0" color.over="#4fcce8" alpha.over="1.0" ratio.upAndSelected="0.03529411764705882" color.upAndSelected="#efcfa1" alpha.upAndSelected="1.0" color.overAndSelected="#efcfa1" alpha.overAndSelected="1.0" color.downAndSelected="#ff5800" alpha.downAndSelected="1.0"/>
+				<s:GradientEntry ratio="1" color="#4fcce8" alpha="1.0" ratio.overAndSelected="1" ratio.over="1" color.down="#a1e1ef" alpha.down="1.0" color.upAndSelected="#ff9300" alpha.upAndSelected="1.0" color.overAndSelected="#ff9300" alpha.overAndSelected="1.0" color.downAndSelected="#ff9300" alpha.downAndSelected="1.0"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:filters>
+			<s:GlowFilter includeIn="overAndSelected" knockout="false" color="#ff5800" strength="1" inner="false" blurX="6.0" blurY="6.0" quality="2" alpha="1.0"/>
+			<s:GlowFilter includeIn="downAndSelected" knockout="false" color="#ff5800" strength="1" inner="false" blurX="6.0" blurY="6.0" quality="2" alpha="1.0"/>
+		</s:filters>
+		<s:fill.disabled>
+			<s:SolidColor color="#cccccc"/>
+		</s:fill.disabled>
+	</s:Rect>
+	<s:Rect radiusX="5" height="14" left.up="0" top.up="0" right.up="0" height.up="50%" left.over="0" right.over="0" top.over="0" height.over="50%" left.down="0" top.down="0" right.down="0" height.down="50%" left.disabled="0" right.disabled="0" top.disabled="0" height.disabled="50%" left.overAndSelected="0" top.overAndSelected="0" right.overAndSelected="0" height.overAndSelected="50%" left.downAndSelected="0" right.downAndSelected="0" top.downAndSelected="0" height.downAndSelected="50%" left.disabledAndSelected="0" top.disabledAndSelected="0" right.disabledAndSelected="0" left.upAndSelected="0" top.upAndSelected="0" right.upAndSelected="0">
+		<s:fill>
+			<s:SolidColor color="#ffffff" alpha="0.2"/>
+		</s:fill>
+	</s:Rect>
+	<s:RichText color="#000000"  fontSize="12" tabStops="S0 S50" text="(Label)" id="labelDisplay" horizontalCenter.up="0" verticalCenter.up="0" horizontalCenter.over="0" verticalCenter.over="0" horizontalCenter.down="0" verticalCenter.down="0" horizontalCenter.disabled="0" verticalCenter.disabled="0" horizontalCenter.overAndSelected="0" verticalCenter.overAndSelected="0" horizontalCenter.downAndSelected="0" verticalCenter.downAndSelected="0" horizontalCenter.disabledAndSelected="0" verticalCenter.disabledAndSelected="0" horizontalCenter.upAndSelected="0" verticalCenter.upAndSelected="0"/>
+</s:Skin>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt">
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="hovered"/>
+		<s:State name="selected"/>
+	</s:states>
+	<s:Rect y="0" x="0" height="13" width="190" includeIn="selected" id="rect3">
+		<s:fill>
+			<s:SolidColor color="0xFFFFFF"/>
+		</s:fill>
+	</s:Rect>
+	<s:Rect d:userLabel="Item Highlight" width="190" height="24" alpha.normal="0" alpha.hovered="0.4" alpha.selected="0.8" id="rect1">
+		<s:fill>
+			<s:SolidColor color="0xCED7EE"/>
+		</s:fill>
+	</s:Rect>
+	<s:Rect y="0" x="0" height="13" width="190" includeIn="hovered" id="rect2">
+		<s:fill>
+			<s:SolidColor color="#333333"/>
+		</s:fill>
+	</s:Rect>
+	<s:Rect left.normal="0" right.normal="0" top.normal="0" bottom.normal="0" right.hovered="0" left.hovered="0" top.hovered="0" bottom.hovered="0" left.selected="0" right.selected="0" top.selected="0" bottom.selected="0">
+		<s:fill>
+			<s:SolidColor color="0xFFFFFF"/>
+		</s:fill>
+		<s:fill.selected>
+			<s:SolidColor color="#cadee2"/>
+		</s:fill.selected>
+		<s:fill.hovered>
+			<s:SolidColor color="#e5e1e1"/>
+		</s:fill.hovered>
+	</s:Rect>
+	<s:RichText color="#000000"  fontSize="12" tabStops="S0 S50 S100" whiteSpaceCollapse="preserve" text="{data}" width="174" height="12" id="labelDisplay" verticalCenter.normal="0" horizontalCenter.normal="0" verticalCenter.hovered="0" horizontalCenter.hovered="0" horizontalCenter.selected="0" verticalCenter.selected="0">
+	</s:RichText>
+	<s:transitions>
+		<s:Transition fromState="hovered" toState="normal" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{rect1}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+				<s:Parallel target="{rect2}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+</s:ItemRenderer>

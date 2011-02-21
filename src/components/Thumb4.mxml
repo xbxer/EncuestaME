@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009">
+	<fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<s:Rect height="69" id="rect1" radiusX="5" width="16" x="0.5" y="0.5">
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#ffffff" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90" rotation.over="180" rotation.down="180">
+				<s:GradientEntry alpha="1.0" color="#a1e1ef" ratio="0" color.over="#efcfa1" alpha.over="1.0" color.down="#ff9300" alpha.down="1.0"/>
+				<s:GradientEntry alpha="1.0" color="#4fcce8" ratio="1" color.over="#ff9300" alpha.over="1.0" color.down="#ff9300" alpha.down="1.0"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:fill.disabled>
+			<s:SolidColor color="#cccccc"/>
+		</s:fill.disabled>
+	</s:Rect>
+	<s:Rect height="70" radiusX="5" width="9" x="0" y="1">
+		<s:fill>
+			<s:SolidColor alpha="0.2" color="#ffffff"/>
+		</s:fill>
+	</s:Rect>
+	<s:Path data="M 9.00 5.20 L 0.00 10.40 -0.00 0.00 Z " height="9" rotation="90" width="5.773" x="13" y="60">
+		<s:fill>
+			<s:SolidColor color="#ffffff"/>
+		</s:fill>
+		<s:filters>
+			<s:GlowFilter alpha="1.0" blurX="6.0" blurY="6.0" color="#055668" inner="false" knockout="false" quality="2" strength="1" color.over="#ffffff" color.down="#ffffff"/>
+		</s:filters>
+	</s:Path>
+	<s:Path data="M 9.00 5.20 L 0.00 10.40 -0.00 0.00 Z " height="9" rotation="-90" width="5.773" x="4" y="11.773">
+		<s:fill>
+			<s:SolidColor color="#ffffff"/>
+		</s:fill>
+		<s:filters>
+			<s:GlowFilter alpha="1.0" blurX="6.0" blurY="6.0" color="#055668" inner="false" knockout="false" quality="2" strength="1" color.over="#ffffff" color.down="#ffffff"/>
+		</s:filters>
+	</s:Path>
+</s:Skin>

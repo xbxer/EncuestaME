@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt">
+	<fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<s:Rect height="16" id="rect1" left="1" top="0" right="2" bottom="0" minWidth="14" minHeight="14" radiusX="5">
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#ffffff" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1.0" color="#a1e1ef" ratio="0" color.over="#efcfa1" alpha.over="1.0" color.down="#ff9300" alpha.down="1.0"/>
+				<s:GradientEntry alpha="1.0" color="#4fcce8" ratio="1" ratio.over="1" color.over="#ff9300" alpha.over="1.0" color.down="#ffcb00" alpha.down="1.0"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:fill.disabled>
+			<s:SolidColor color="#cccccc"/>
+		</s:fill.disabled>
+	</s:Rect>
+	<s:Rect height="7" radiusX="5" left.up="1" top.up="1" right.up="2" height.up="50%" left.over="1" top.over="1" right.over="2" height.over="50%" left.down="1" top.down="1" right.down="2" height.down="50%" top.disabled="1" left.disabled="1" right.disabled="0" height.disabled="50%">
+		<s:fill>
+			<s:SolidColor alpha="0.2" color="#ffffff"/>
+		</s:fill>
+	</s:Rect>
+	<s:Path data="M 9.00 5.20 L 0.00 10.40 -0.00 0.00 Z " height="9" width="5.773" verticalCenter.up="0" verticalCenter.over="0" verticalCenter.down="0" verticalCenter.disabled="0" right.up="5" right.over="5" right.down="5" right.disabled="5">
+		<s:fill>
+			<s:SolidColor color="#ffffff"/>
+		</s:fill>
+		<s:filters>
+			<s:GlowFilter alpha="1.0" blurX="6.0" blurY="6.0" color="#055668" inner="false" knockout="false" quality="2" strength="1" color.over="#ffffff" color.down="#ffffff"/>
+			<s:DropShadowFilter alpha="1.0" angle="45.0" blurX="2" blurY="2" color="0x5FCEE7" distance="2" hideObject="false" inner="true" knockout="false" quality="2" strength="1" includeIn="disabled"/>
+		</s:filters>
+	</s:Path>
+	<s:Path data="M 9.00 5.20 L 0.00 10.40 -0.00 0.00 Z " height="9" rotation="180" width="5.773" x="10.773" verticalCenter.up="0" verticalCenter.over="0" verticalCenter.down="0" verticalCenter.disabled="0">
+		<s:fill>
+			<s:SolidColor color="#ffffff"/>
+		</s:fill>
+		<s:filters>
+			<s:GlowFilter alpha="1.0" blurX="6.0" blurY="6.0" color="#055668" inner="false" knockout="false" quality="2" strength="1" color.over="#ffffff" color.down="#ffffff"/>
+			<s:DropShadowFilter alpha="1.0" angle="45.0" blurX="2" blurY="2" color="0x5FCEE7" distance="2" hideObject="false" inner="true" knockout="false" quality="2" strength="1" includeIn="disabled"/>
+		</s:filters>
+	</s:Path>
+</s:Skin>

@@ -1,0 +1,72 @@
+/* CSS file */
+/*
+
+Plastic -Flex 4 theme built using Adobe Flash Catalyst Beta 2.
+by Harish Sivaramakrishnan (flexgeek) http://blog.flexgeek.in
+If you find sizing issues with any of the components, drop me
+an email hsivaramakrishnan@gmail.com
+
+*/
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/halo";
+@font-face
+{
+	src: url("UbuntuTitling-Bold.ttf");
+	font-family: "Ubuntu";
+	embedAsCFF: true;
+}
+global
+{
+	font-family: "Ubuntu";
+	font-color: "#FFFFFF";
+}
+s|Button
+{
+	focusColor: #4fcce8;
+	skinClass: ClassReference("components.Button1");
+	
+}
+s|List.menuList
+{
+	skinClass: ClassReference("components.DataList2");
+
+}
+s|List.defaultList
+{
+	skinClass: ClassReference("components.DataList1");
+
+}
+s|HSlider
+{
+	skinClass: ClassReference("components.HorizontalSlider1");
+}
+s|VSlider
+{
+	skinClass: ClassReference("components.VerticalSlider1");
+}
+s|ToggleButton
+{
+	focusColor: #4fcce8;
+	skinClass: ClassReference("components.ToggleButton1");
+	
+}
+s|CheckBox
+{
+	focusColor: #4fcce8;
+	skinClass: ClassReference("components.Checkbox1");
+}	
+s|HScrollBar
+{
+	focusColor: #4fcce8;
+	skinClass: ClassReference("components.HorizontalScrollbar1");
+}	
+s|VScrollBar
+{
+	focusColor: #4fcce8;
+	skinClass: ClassReference("components.VerticalScrollbar5");
+}	
+s|RadioButton
+{
+	focusColor: #4fcce8;
+	skinClass: ClassReference("components.RadioButton1");
+}	

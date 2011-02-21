@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009">
+	<fx:Metadata>[HostComponent("spark.components.HSlider")]</fx:Metadata>
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<s:Button skinClass="components.Track2" left="0" right="0" top="0" bottom="0" minWidth="33" width="100" id="track"/>
+	<s:Button skinClass="components.Thumb3" top="0" bottom="0" width="13" height="13" id="thumb"/>
+</s:Skin>
