@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+<s:BorderContainer xmlns:fx="http://ns.adobe.com/mxml/2009" 
 		 xmlns:s="library://ns.adobe.com/flex/spark" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:fc="http://ns.adobe.com/flashcatalyst/2009"
-		 xmlns:mx="library://ns.adobe.com/flex/mx" width="672" height="242" contentBackgroundColor="#181818" xmlns:components="components.*">
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="600" height="350" xmlns:components="components.*" borderVisible="false" backgroundAlpha="0">
+	<s:layout>
+		<s:BasicLayout/>
+	</s:layout>
 	<fx:Style source="Plastic.css"/>
-	<fx:DesignLayer d:userLabel="Layer 1">
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-		<s:Rect height="241" radiusX="20" width="671" x="1" y="1">
+	<fx:DesignLayer d:userLabel="Layer 1">
+		<s:Rect height="350" radiusX="20" width="600" x="0" y="0">
 			<s:fill>
 				<s:SolidColor color="#F4f4f4"/>
 			</s:fill>
@@ -15,11 +18,15 @@
 				<s:SolidColorStroke color="0xFFFFFF"/>
 			</s:stroke>
 		</s:Rect>
-		<s:Button label="Aceptar" skinClass="components.Button1" x="458" y="205" width="100" height="25"/>
-		<s:Button label="Cancelar" skinClass="components.Button1" x="567" y="205" width="100" height="25"/>
+		<s:Button label="Aceptar" skinClass="components.Button1" x="372" y="315" width="100" height="25"/>
+		<s:Button label="Cancelar" skinClass="components.Button1" x="490" y="315" width="100" height="25"/>
 		<s:Label x="6" y="10" text="Alternativas" fontSize="40" color="#000000"/>
-		<s:TextInput skinClass="components.TextInput1" x="10" y="64" width="652" height="135" text="Text Input"/>
+		<s:TextInput skinClass="components.TextInput1" x="10" y="92" width="580" height="135" text="Text Input" enabled="true" textAlign="center"/>
+	<mx:HRule x="10" y="50" width="472"/>
+	<s:DropDownList x="44" y="254" width="546" enabled="true"></s:DropDownList>
+	<s:Label x="9" y="258" text="Tipo:" width="53" height="17"/>
+	<s:Label x="10" y="68" text="Pregunta Alternativa:"/>
+	<mx:VRule x="480" y="311" height="29"/>
+	<mx:HRule x="10" y="235" width="580"/>
 	</fx:DesignLayer>
-	<mx:HRule x="10" y="58" width="380"/>
-	
-</s:Group>
+</s:BorderContainer>

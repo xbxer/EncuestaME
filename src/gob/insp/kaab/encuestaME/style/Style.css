@@ -496,5 +496,8 @@ global
 	focus-color: #2A78C0;
 	selection-color: #85B0EA;
 	content-background-color: #000000;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
