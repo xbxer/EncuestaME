@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:BorderContainer xmlns:fx="http://ns.adobe.com/mxml/2009" 
 		 xmlns:s="library://ns.adobe.com/flex/spark" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:fc="http://ns.adobe.com/flashcatalyst/2009"
-		 xmlns:mx="library://ns.adobe.com/flex/mx" width="600" height="350" xmlns:components="components.*" borderVisible="false" backgroundAlpha="0">
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="600" height="350" xmlns:components="components.*" borderVisible="false" backgroundAlpha="0" creationComplete="centerScreen()">
 	<s:layout>
 		<s:BasicLayout/>
 	</s:layout>
 	<fx:Style source="Plastic.css"/>
+	<fx:Script>
+		<![CDATA[
+			public function centerScreen():void{
+					x=(this.parent.width/2)-(this.width/2);
+					y=(this.parent.height/2)-(this.height/2);
+			}
+		]]>
+	</fx:Script>
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>

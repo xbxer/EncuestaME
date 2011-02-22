@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
 			   xmlns:s="library://ns.adobe.com/flex/spark" 
-			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600" xmlns:views="gob.insp.kaab.encuestaME.views.*" backgroundColor="#181818">
-	<fx:Style source="gob/insp/kaab/encuestaME/style/Style.css" />
+			   xmlns:mx="library://ns.adob.com/flex/mx" minWidth="1024" minHeight="768" xmlns:views="gob.insp.kaab.encuestaME.views.*" backgroundColor="#222222"  skinClass="components.MyAppBackgroundSkin" resize="application1_resizeHandler(event)">
+	<fx:Style source="gob/insp/kaab/encuestaME/style/Style.css"/>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.events.ResizeEvent;
+
+			protected function application1_resizeHandler(event:ResizeEvent):void
+			{
+				if (!(alternativas == null))
+					{
+						alternativas.centerScreen();
+					}	
+			}
+
+		]]>
+	</fx:Script>
+	
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<views:alternativasView x="10" y="10">
+	<views:alternativasView x="355" y="179" id="alternativas">
 	</views:alternativasView>
 </s:Application>
